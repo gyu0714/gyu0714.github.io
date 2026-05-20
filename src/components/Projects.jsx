@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Github, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react'
 import { projects } from '../data/portfolio'
+import { useFadeIn } from '../hooks/useFadeIn'
 
 function ProjectCard({ project }) {
   const [expanded, setExpanded] = useState(false)
@@ -79,7 +80,7 @@ function ProjectCard({ project }) {
                 <ul className="space-y-2">
                   {project.highlights.map((h, i) => (
                     <li key={i} className="flex gap-2 text-sm text-text-muted">
-                      <span className="text-primary font-bold shrink-0">0{i + 1}</span>
+                      <span className="text-primary font-bold shrink-0">{String(i + 1).padStart(2, '0')}</span>
                       <span>{h}</span>
                     </li>
                   ))}
@@ -117,9 +118,10 @@ function ProjectCard({ project }) {
 }
 
 export default function Projects() {
+  const ref = useFadeIn()
   return (
     <section id="projects" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
         <div className="text-center mb-4">
           <h2 className="section-title">Projects</h2>
           <div className="section-divider mx-auto" />
@@ -127,9 +129,9 @@ export default function Projects() {
 
         {/* 프로젝트 안내 (PDF 4페이지 스타일) */}
         <div className="neu-card p-6 mb-10 text-sm text-text-muted space-y-1">
-          <p>· 공개 가능한 범위 중 분야별 중복되지 않는 경험의 기획 작업 위주로 작성되었습니다.</p>
-          <p>· 전반적인 프로젝트의 <strong className="text-text">목표에 따른 해결</strong> 과정을 중점적으로 기재하였습니다.</p>
-          <p>· 상세 프로젝트 외 기타 항목의 경우 Contact를 통해 확인할 수 있습니다.</p>
+          <p>· 공개 가능한 범위 내에서 분야별 중복되지 않는 프로젝트를 선별하여 작성하였습니다.</p>
+          <p>· 각 프로젝트의 <strong className="text-text">문제 정의와 기술적 해결 과정</strong>을 중점적으로 기재하였습니다.</p>
+          <p>· 기재되지 않은 프로젝트 및 기타 사항은 Contact를 통해 확인하실 수 있습니다.</p>
         </div>
 
         <div className="flex flex-col gap-6">

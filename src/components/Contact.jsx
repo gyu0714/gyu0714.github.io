@@ -1,10 +1,12 @@
 import { Github, Mail, ExternalLink } from 'lucide-react'
 import { profile } from '../data/portfolio'
+import { useFadeIn } from '../hooks/useFadeIn'
 
 export default function Contact() {
+  const ref = useFadeIn()
   return (
     <section id="contact" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
         <div className="text-center mb-14">
           <h2 className="section-title">Contact</h2>
           <div className="section-divider mx-auto" />

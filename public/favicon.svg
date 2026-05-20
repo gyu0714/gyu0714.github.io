@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#dce8f5"/>
+  <rect x="2" y="2" width="28" height="28" rx="6" fill="#e8f0fa"
+    filter="drop-shadow(2px 2px 3px #b8cce0) drop-shadow(-2px -2px 3px #ffffff)"/>
+  <text x="16" y="22" text-anchor="middle" font-family="Arial, sans-serif"
+    font-size="16" font-weight="bold" fill="#1d6ae5">G</text>
+</svg>

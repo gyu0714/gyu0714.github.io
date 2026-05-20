@@ -1,9 +1,11 @@
 import { strengths, tags } from '../data/portfolio'
+import { useFadeIn } from '../hooks/useFadeIn'
 
 export default function Skills() {
+  const ref = useFadeIn()
   return (
     <section id="skills" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
         {/* 섹션 헤더 */}
         <div className="text-center mb-6">
           <h2 className="section-title">Strengths</h2>
