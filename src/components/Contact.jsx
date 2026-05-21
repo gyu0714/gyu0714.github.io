@@ -5,9 +5,9 @@ import { useFadeIn } from '../hooks/useFadeIn'
 export default function Contact() {
   const ref = useFadeIn()
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-16 px-6">
       <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8">
           <h2 className="section-title">Contact</h2>
           <div className="section-divider mx-auto" />
           <p className="text-text-muted">
@@ -15,8 +15,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="neu-card p-12 max-w-2xl mx-auto">
-          <div className="flex flex-col gap-5">
+        <div className="neu-card p-8 max-w-2xl mx-auto">
+          <div className="flex flex-col gap-4">
             <a
               href={`mailto:${profile.email}`}
               className="neu-card-sm flex items-center gap-5 p-5 hover:translate-y-[-2px] transition-transform duration-200 group"

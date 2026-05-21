@@ -9,7 +9,7 @@ function ProjectCard({ project }) {
   return (
     <div className="neu-card overflow-hidden">
       {/* 상단 헤더 */}
-      <div className="p-8 border-b border-shadow-dark/30">
+      <div className="p-6 border-b border-shadow-dark/30">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
@@ -58,16 +58,16 @@ function ProjectCard({ project }) {
       {/* 상세 내용 토글 */}
       <button
         onClick={() => setExpanded(!expanded)}
-        className="w-full px-8 py-4 flex items-center justify-between text-sm text-text-muted hover:text-primary transition-colors"
+        className="w-full px-6 py-3 flex items-center justify-between text-sm text-text-muted hover:text-primary transition-colors"
       >
         <span>{expanded ? '접기' : '상세 내용 보기'}</span>
         {expanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
 
       {expanded && (
-        <div className="px-8 pb-8">
+        <div className="px-6 pb-6">
           {/* 두 컬럼 레이아웃 (PDF 프로젝트 페이지 스타일) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* 왼쪽: 설명 */}
             <div>
               <p className="text-sm text-text-muted leading-relaxed mb-5">
@@ -120,7 +120,7 @@ function ProjectCard({ project }) {
 export default function Projects() {
   const ref = useFadeIn()
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-16 px-6">
       <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
         <div className="text-center mb-4">
           <h2 className="section-title">Projects</h2>
@@ -128,7 +128,7 @@ export default function Projects() {
         </div>
 
         {/* 프로젝트 안내 (PDF 4페이지 스타일) */}
-        <div className="neu-card p-6 mb-10 text-sm text-text-muted space-y-1">
+        <div className="neu-card p-5 mb-6 text-sm text-text-muted space-y-1">
           <p>· 공개 가능한 범위 내에서 분야별 중복되지 않는 프로젝트를 선별하여 작성하였습니다.</p>
           <p>· 각 프로젝트의 <strong className="text-text">문제 정의와 기술적 해결 과정</strong>을 중점적으로 기재하였습니다.</p>
           <p>· 기재되지 않은 프로젝트 및 기타 사항은 Contact를 통해 확인하실 수 있습니다.</p>

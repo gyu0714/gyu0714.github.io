@@ -42,7 +42,7 @@ body {
     @apply text-2xl font-bold text-primary mb-1;
   }
   .section-divider {
-    @apply w-12 h-1 bg-primary rounded-full mb-6;
+    @apply w-12 h-1 bg-primary rounded-full mb-4;
   }
 }
 
