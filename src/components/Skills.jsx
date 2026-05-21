@@ -4,16 +4,16 @@ import { useFadeIn } from '../hooks/useFadeIn'
 export default function Skills() {
   const ref = useFadeIn()
   return (
-    <section id="skills" className="py-24 px-6">
+    <section id="skills" className="py-16 px-6">
       <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
         {/* 섹션 헤더 */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-4">
           <h2 className="section-title">Strengths</h2>
           <div className="section-divider mx-auto" />
         </div>
 
         {/* 태그 라인 (PDF 3페이지 상단) */}
-        <p className="text-center text-text-muted text-sm mb-12">
+        <p className="text-center text-text-muted text-sm mb-8">
           여러 기술 중에서도 핵심적으로{' '}
           {tags.map((tag, i) => (
             <span key={i}>
@@ -27,11 +27,11 @@ export default function Skills() {
         </p>
 
         {/* 강점 카드 3개 (PDF 3페이지 카드 그리드) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {strengths.map((item, i) => (
             <div
               key={i}
-              className="neu-card p-8 flex flex-col items-center text-center gap-5 transition-all duration-300 hover:translate-y-[-4px]"
+              className="neu-card p-6 flex flex-col items-center text-center gap-4 transition-all duration-300 hover:translate-y-[-4px]"
               style={{
                 transition: 'box-shadow 0.3s, transform 0.3s',
               }}

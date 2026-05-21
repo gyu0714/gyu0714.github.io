@@ -4,11 +4,11 @@ import { useFadeIn } from '../hooks/useFadeIn'
 export default function About() {
   const ref = useFadeIn()
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-16 px-6">
 
       <div ref={ref} className="max-w-5xl mx-auto fade-in-section">
         {/* 섹션 헤더 */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-8">
           <h2 className="section-title">About</h2>
           <div className="section-divider mx-auto" />
           <p className="text-text-muted leading-relaxed max-w-2xl mx-auto">
@@ -16,10 +16,10 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* 경력 카드 (PDF 2페이지 왼쪽) */}
-          <div className="neu-card p-8">
-            <div className="mb-6">
+          <div className="neu-card p-6">
+            <div className="mb-4">
               <p className="text-xs text-text-muted uppercase tracking-widest mb-1">
                 Total Experience
               </p>
@@ -62,8 +62,8 @@ export default function About() {
           </div>
 
           {/* 툴 카드 (PDF 2페이지 오른쪽) */}
-          <div className="neu-card p-8">
-            <div className="mb-6">
+          <div className="neu-card p-6">
+            <div className="mb-4">
               <p className="text-xs text-text-muted uppercase tracking-widest mb-1">
                 Tools & Skills
               </p>
