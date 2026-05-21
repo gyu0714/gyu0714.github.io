@@ -30,7 +30,8 @@ export const experiences = [
     type: '정직원',
     period: '2022.10.17 ~ 재직중',
     tasks: [
-      '나하고 모바일 APP 개발',
+      'React Native 기반 나하고 모바일 APP 개발 (누적 다운로드 60만+)',
+      '출퇴근 · 전자결재 · 연말정산 · 메신저 등 40개 마이크로서비스 개발',
       '직원정보 · 급여명세서 · HR 관련 기능 개발',
       '전자문서지갑 개발',
     ],
@@ -80,20 +81,20 @@ export const tags = ['#태그1', '#태그2', '#태그3']
 export const projects = [
   {
     id: 1,
-    title: '프로젝트 이름',
-    period: '20XX.XX ~ 20XX.XX',
-    summary: '프로젝트 한 줄 요약',
-    role: 'Frontend Developer',
-    tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    description: '프로젝트에 대한 상세 설명을 여기에 작성하세요. 어떤 문제를 해결했는지, 어떤 기여를 했는지 작성합니다.',
+    title: '나하고 모바일',
+    period: '2022.10 ~ 현재',
+    summary: 'React Native 기반 기업용 올인원 모바일 앱 · 누적 다운로드 60만+',
+    role: 'Mobile App Developer',
+    tech: ['React Native', 'TypeScript', 'Expo', 'XState', 'Zustand', 'TanStack Query', 'Turborepo', 'pnpm'],
+    description: '두존 나하고 서비스의 React Native 기반 기업용 모바일 앱. 출퇴근 관리부터 전자결재, 급여 조회, 연말정산, 메신저까지 업무에 필요한 기능을 하나의 앱으로 통합 제공. Turborepo 모노레포 구조 하에 40개 독립 마이크로서비스로 구성되어 있으며, XState 상태머신으로 앱 초기화 플로우(세션 검증 → PIN Lock → 딥링크 처리)를 안전하게 제어. 3개 앱(nahago, wehago, wehagoq)과 11개 공유 패키지를 단일 모노레포에서 관리.',
     highlights: [
-      '주요 성과 1',
-      '주요 성과 2',
-      '주요 성과 3',
+      '누적 다운로드 60만+ 달성',
+      '40개 독립 마이크로서비스 아키텍처로 신규 서비스 추가 시 코드 결합도 최소화',
+      'XState 상태머신으로 앱 부트스트랩 플로우(세션·딥링크·PIN Lock) 안전하게 제어',
+      'Hot Updater OTA 배포로 스토어 심사 없이 JS 번들 실시간 업데이트',
     ],
-    github: 'https://github.com/gyu0714',
+    github: 'https://github.com/gyu0714/douzone-nahago-mobile',
     demo: '',
-    // TODO: 스크린샷 이미지 경로 배열
     screenshots: [],
   },
   {
