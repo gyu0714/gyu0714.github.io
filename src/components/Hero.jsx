@@ -9,11 +9,11 @@ export default function Hero() {
     >
       <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* 프로필 카드 */}
-        <div className="flex justify-center md:justify-start">
-          <div className="neu-card p-8 flex flex-col items-center gap-5 w-72">
+        <div className="flex justify-center md:justify-end">
+          <div className="neu-card p-9 flex flex-col items-center gap-6 w-80">
             {/* 아바타 */}
             <div
-              className="w-32 h-32 rounded-full flex items-center justify-center text-5xl"
+              className="w-36 h-36 rounded-full flex items-center justify-center text-5xl"
               style={{
                 background: 'linear-gradient(135deg, #5b9cf6, #1d6ae5)',
                 boxShadow: '4px 4px 10px #b8cce0, -4px -4px 10px #ffffff',
@@ -32,8 +32,8 @@ export default function Hero() {
 
             {/* 이름 / 역할 */}
             <div className="text-center">
-              <p className="text-xl font-bold text-text">{profile.name}</p>
-              <p className="text-sm font-semibold text-primary mt-1">{profile.role}</p>
+              <p className="text-2xl font-bold text-text">{profile.name}</p>
+              <p className="text-sm font-semibold text-primary mt-1.5">{profile.role}</p>
               <p className="text-xs text-text-muted mt-1">{profile.birth}</p>
             </div>
 

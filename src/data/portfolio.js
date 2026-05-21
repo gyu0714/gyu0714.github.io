@@ -96,7 +96,7 @@ export const projects = [
     ],
     github: 'https://github.com/gyu0714/douzone-nahago-mobile',
     demo: '',
-    screenshots: [],
+    screenshots: ['/screenshots/nahago-1.png', '/screenshots/nahago-2.png'],
   },
   {
     id: 2,
