@@ -56,7 +56,7 @@ export const tools = [
   { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg' },
   { name: 'Notion', icon: 'https://cdn.simpleicons.org/notion/000000' },
   { name: 'React Query', icon: 'https://cdn.simpleicons.org/reactquery' },
-  { name: 'Zustand', icon: 'https://cdn.simpleicons.org/zustand' },
+  { name: 'Zustand', icon: '🐻' },
 ]
 
 export const strengths = [
