@@ -1,21 +1,20 @@
 export const profile = {
-  name: '이름',           // TODO: 이름 입력
-  nameEn: 'Your Name',
-  role: 'Frontend Developer',
-  birth: '1996.00.00',    // TODO: 생년월일 입력
-  email: 'your@email.com', // TODO: 이메일 입력
+  name: '김민규',
+  nameEn: 'Kim Mingyu',
+  role: 'Full Stack Developer',
+  birth: '1995.07.14',
+  email: 'lagyu99@gmail.com',
   github: 'https://github.com/gyu0714',
-  linkedin: '',           // TODO: LinkedIn URL 입력
+  linkedin: '',
   intro: [
-    '복잡한 문제를 단순하고 직관적인 코드로 해결하고,',
-    '사용자가 서비스에 자연스럽게 녹아드는 경험을 만들어갑니다.',
+    '끝에서 끝까지 직접 설계하고 구현하는 Full Stack Developer,',
+    '사용자 경험부터 서버 아키텍처까지 책임집니다.',
   ],
   intro2: [
-    '개발 전문지식을 기반으로 최적의 구조와 성능을 고안하고,',
-    '팀원과의 원활한 소통으로 함께 성장합니다.',
+    '빠른 실행력과 넓은 기술 스택을 바탕으로',
+    '아이디어를 완성된 서비스로 만들어냅니다.',
   ],
-  // TODO: 본인 아바타/프로필 이미지 경로로 교체
-  avatar: null,
+  avatar: '/avatar.png',
 }
 
 export const summary = {
