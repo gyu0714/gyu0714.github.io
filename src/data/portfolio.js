@@ -6,10 +6,19 @@ export const profile = {
   email: 'lagyu99@gmail.com',
   github: 'https://github.com/gyu0714',
   linkedin: '',
+  greeting: '안녕하세요!',
+  selfIntro: 'Full Stack Developer 김민규 입니다.',
+  infoItems: [
+    'Working at DOUZONE(더존비즈온)',
+    'Based in Korea',
+    'Since 2021',
+  ],
+  introLabel: 'Full Stack Developer',
   intro: [
     '끝에서 끝까지 직접 설계하고 구현하는 Full Stack Developer,',
     '사용자 경험부터 서버 아키텍처까지 책임집니다.',
   ],
+  intro2Label: 'Mobile Developer',
   intro2: [
     '빠른 실행력과 넓은 기술 스택을 바탕으로',
     '아이디어를 완성된 서비스로 만들어냅니다.',
