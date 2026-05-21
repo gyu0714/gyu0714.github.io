@@ -77,7 +77,7 @@ export const strengths = [
   },
 ]
 
-export const tags = ['#태그1', '#태그2', '#태그3']
+export const tags = ['#ReactNative', '#TypeScript', '#컴포넌트설계']
 
 export const projects = [
   {
