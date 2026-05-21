@@ -48,15 +48,15 @@ export const experiences = [
 ]
 
 export const tools = [
-  { name: 'React', icon: '⚛️' },
-  { name: 'Spring Boot', icon: '🍃' },
-  { name: 'TypeScript', icon: '🔷' },
-  { name: 'Vite', icon: '⚡' },
-  { name: 'Git', icon: '🐙' },
-  { name: 'Figma', icon: '🎨' },
-  { name: 'Notion', icon: '📝' },
-  { name: 'React Query', icon: '🔄' },
-  { name: 'Zustand', icon: '🐻' },
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+  { name: 'Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg' },
+  { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
+  { name: 'Vite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg' },
+  { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
+  { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg' },
+  { name: 'Notion', icon: 'https://cdn.simpleicons.org/notion/000000' },
+  { name: 'React Query', icon: 'https://cdn.simpleicons.org/reactquery' },
+  { name: 'Zustand', icon: 'https://cdn.simpleicons.org/zustand' },
 ]
 
 export const strengths = [

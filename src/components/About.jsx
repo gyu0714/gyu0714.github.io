@@ -83,7 +83,11 @@ export default function About() {
             <div className="grid grid-cols-3 gap-4">
               {tools.map((tool, i) => (
                 <div key={i} className="neu-card-sm p-4 flex flex-col items-center gap-2">
-                  <span className="text-2xl">{tool.icon}</span>
+                  {tool.icon.startsWith('http') ? (
+                    <img src={tool.icon} alt={tool.name} className="w-8 h-8 object-contain" />
+                  ) : (
+                    <span className="text-2xl">{tool.icon}</span>
+                  )}
                   <span className="text-xs font-medium text-text-muted text-center">
                     {tool.name}
                   </span>
