@@ -49,13 +49,14 @@ export const experiences = [
 
 export const tools = [
   { name: 'React', icon: '⚛️' },
+  { name: 'Spring Boot', icon: '🍃' },
   { name: 'TypeScript', icon: '🔷' },
-  { name: 'JavaScript', icon: '🟨' },
   { name: 'Vite', icon: '⚡' },
-  { name: 'Tailwind', icon: '💨' },
   { name: 'Git', icon: '🐙' },
   { name: 'Figma', icon: '🎨' },
   { name: 'Notion', icon: '📝' },
+  { name: 'React Query', icon: '🔄' },
+  { name: 'Zustand', icon: '🐻' },
 ]
 
 export const strengths = [
