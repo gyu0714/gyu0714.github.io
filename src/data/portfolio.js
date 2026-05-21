@@ -61,19 +61,19 @@ export const tools = [
 
 export const strengths = [
   {
-    icon: '💻',
-    title: '강점 제목 1',
-    description: '강점에 대한 설명을 여기에 입력하세요.',
+    icon: '📱',
+    title: '대규모 모바일 앱 개발 경험',
+    description: '누적 다운로드 60만+ 기업용 앱에서 11개 서비스를 개발하며, 실제 수십만 사용자에게 서비스되는 코드를 작성한 경험이 있습니다.',
   },
   {
-    icon: '🤝',
-    title: '강점 제목 2',
-    description: '강점에 대한 설명을 여기에 입력하세요.',
+    icon: '🧩',
+    title: '공통 모듈 설계로 생산성 향상',
+    description: '네트워크 통신 모듈과 컴포넌트 라이브러리를 직접 설계·구현하여 팀 전체의 개발 효율을 높이는 데 기여했습니다.',
   },
   {
     icon: '🚀',
-    title: '강점 제목 3',
-    description: '강점에 대한 설명을 여기에 입력하세요.',
+    title: '빠른 학습과 넓은 기술 스택',
+    description: 'React Native, Spring Boot, TypeScript 등 다양한 기술을 실무에서 직접 사용하며, 새로운 기술도 빠르게 익혀 서비스에 적용합니다.',
   },
 ]
 
