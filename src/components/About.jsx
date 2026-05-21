@@ -45,7 +45,14 @@ export default function About() {
                     )}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-text">{exp.company}</p>
+                    <div className="flex items-center gap-2 mb-0.5">
+                      <p className="font-semibold text-text">{exp.company}</p>
+                      {exp.type && (
+                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                          {exp.type}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-xs text-text-muted mb-2">{exp.period}</p>
                     <ul className="text-sm text-text-muted space-y-1">
                       {exp.tasks.map((task, j) => (

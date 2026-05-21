@@ -10,10 +10,10 @@ export default function Hero() {
       <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* 프로필 카드 */}
         <div className="flex justify-center md:justify-start">
-          <div className="neu-card p-6 flex flex-col items-center gap-4 w-52">
+          <div className="neu-card p-8 flex flex-col items-center gap-5 w-72">
             {/* 아바타 */}
             <div
-              className="w-24 h-24 rounded-full flex items-center justify-center text-4xl"
+              className="w-32 h-32 rounded-full flex items-center justify-center text-5xl"
               style={{
                 background: 'linear-gradient(135deg, #5b9cf6, #1d6ae5)',
                 boxShadow: '4px 4px 10px #b8cce0, -4px -4px 10px #ffffff',
@@ -32,38 +32,38 @@ export default function Hero() {
 
             {/* 이름 / 역할 */}
             <div className="text-center">
-              <p className="text-lg font-bold text-text">{profile.name}</p>
-              <p className="text-sm font-semibold text-primary mt-0.5">{profile.role}</p>
-              <p className="text-xs text-text-muted mt-0.5">{profile.birth}</p>
+              <p className="text-xl font-bold text-text">{profile.name}</p>
+              <p className="text-sm font-semibold text-primary mt-1">{profile.role}</p>
+              <p className="text-xs text-text-muted mt-1">{profile.birth}</p>
             </div>
 
             {/* 구분선 */}
             <div className="w-full h-px bg-gradient-to-r from-transparent via-shadow-dark to-transparent" />
 
             {/* 소셜 링크 */}
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <a
                 href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="neu-btn p-2.5 rounded-xl text-text-muted hover:text-primary"
+                className="neu-btn p-3 rounded-xl text-text-muted hover:text-primary"
               >
-                <Github size={16} />
+                <Github size={18} />
               </a>
               <a
                 href={`mailto:${profile.email}`}
-                className="neu-btn p-2.5 rounded-xl text-text-muted hover:text-primary"
+                className="neu-btn p-3 rounded-xl text-text-muted hover:text-primary"
               >
-                <Mail size={16} />
+                <Mail size={18} />
               </a>
               {profile.linkedin && (
                 <a
                   href={profile.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="neu-btn p-2.5 rounded-xl text-text-muted hover:text-primary"
+                  className="neu-btn p-3 rounded-xl text-text-muted hover:text-primary"
                 >
-                  <ExternalLink size={16} />
+                  <ExternalLink size={18} />
                 </a>
               )}
             </div>

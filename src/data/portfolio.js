@@ -18,16 +18,17 @@ export const profile = {
 }
 
 export const summary = {
-  careerYears: '0년 0개월',
+  careerYears: '3년 11개월',
   description:
     '간략한 커리어 요약을 여기에 작성하세요. 어떤 분야에서 어떤 일을 해왔는지 2~3문장으로 소개합니다.',
 }
 
 export const experiences = [
   {
-    company: '회사명',
-    logo: null,           // TODO: 로고 이미지 경로
-    period: '20XX.XX ~ 현재',
+    company: '더존비즈온',
+    logo: null,
+    type: '정직원',
+    period: '2022.10.17 ~ 재직중',
     tasks: [
       '주요 업무 1',
       '주요 업무 2',
@@ -35,9 +36,10 @@ export const experiences = [
     ],
   },
   {
-    company: '회사명 2',
+    company: '블루스카이',
     logo: null,
-    period: '20XX.XX ~ 20XX.XX',
+    type: '계약직',
+    period: '2021.05.17 ~ 2021.09.11',
     tasks: [
       '주요 업무 1',
       '주요 업무 2',
